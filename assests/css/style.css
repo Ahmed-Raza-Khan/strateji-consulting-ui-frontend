@@ -440,3 +440,220 @@
 .stat-item .text-center {
     text-align: center !important;
 }
+
+
+/* process section */
+.process-section {
+    background-color: #001f4c;
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.process-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 65%;
+    background-image: url('../images/working-process-vector-background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 0;
+}
+
+.process-content {
+    position: relative;
+    z-index: 1;
+}
+
+.workin-process-small-heading{
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 17px;
+    line-height: 17px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+}
+
+.workin-process-big-heading{
+    width: 800px;
+    height: auto;
+    margin-left: 20%;
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 63px;
+    line-height: 70px;
+    letter-spacing: -1.26px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.workin-process-big-color{
+    color: var(--background-color);
+}
+
+.step-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #294F4E;
+    z-index: -1;
+}
+
+.step-box {
+    width: 110px;
+    height: 43px;
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 19px;
+    line-height: 21px;
+    letter-spacing: -0.38px;
+    text-transform: uppercase;
+    background-color: var(--blue-color);
+    padding: 11px 10px;
+    border-radius: 13px;
+    display: inline-block;
+}
+
+.step-item {
+    text-align: center;
+    position: relative;
+}
+
+.step-item::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 45px;
+    width: 2px;
+    background-color: #294F4E;
+}
+
+.step-text {
+    margin-top: -20px;
+    padding-top: 15px;
+    text-align: left;
+    /* margin-left: 1%; */
+}
+
+.bottom-text-step-heading{
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 29px;
+    line-height: 36px;
+    letter-spacing: -0.59px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    width: 450px;
+}
+
+.bottom-text-step-heading-3{
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 29px;
+    line-height: 36px;
+    letter-spacing: -0.59px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    width: 450px;
+    margin-left: 110px;
+}
+
+.bottom-text-step-description{
+    width: 300px;
+    height: auto;
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 19px;
+    line-height: 31px;
+    color: var(--white-color);
+}
+
+.bottom-text-step-description-2{
+    width: 300px;
+    height: auto;
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 19px;
+    line-height: 31px;
+    color: var(--white-color);
+    margin-left: 70px;
+}
+
+
+/* our team section */
+.team-section {
+    background-color: #ffffff;
+}
+
+.small-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2b6cff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.main-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0a2540;
+    line-height: 1.2;
+}
+
+.team-card {
+    background-color: #f3f3f3;
+    border-radius: 16px;
+    padding: 25px 20px;
+    transition: all 0.3s ease;
+}
+
+.team-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.team-card h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0a2540;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.team-card p {
+    font-size: 13px;
+    color: #6c757d;
+    margin: 0;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
