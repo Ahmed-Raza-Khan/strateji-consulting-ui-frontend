@@ -672,59 +672,90 @@
 
 
 /* our process section */
-.small-heading {
-    color: #007bff; /* Bootstrap primary color */
+.small-headin-our-process {
+    font-family: var(--font-heading-oswald);
     font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--blue-color);
     margin-bottom: 0.5rem;
 }
 
-.main-heading {
-    font-weight: 800;
-    color: #212529; /* Bootstrap dark color */
+.main-heading-our-process {
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 63px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    width: 520px;
+}
+
+.main-heading-process-succ{
+    color: var(--blue-color);
 }
 
 .arrow-btn {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    border: 1px solid #dee2e6;
-    background-color: white;
+    border: 1px solid var(--card-color);
+    background-color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: al 0.3s, ease;
+}
+
+.arrow-right-rotate{
+    transform: rotate(180deg);
 }
 
 .arrow-btn:hover {
-    background-color: #e9ecef;
+    background-color: var(--blue-color);    
+}
+
+.arrow-btn:hover img {
+filter: brightness(0) invert(1);
+}
+
+.arrow-left:hover img {
+transform: rotate(360deg);
+}
+
+.arrow-right:hover img {
+transform: rotate(180deg);
 }
 
 .slider-container {
-    overflow-x: scroll; /* Allows for horizontal scrolling of cards */
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
 
-/* Hide scrollbar for cleaner look, but maintain functionality */
 .slider-container::-webkit-scrollbar {
     display: none;
 }
 
 .slider-container {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* margin-left: 60%; */
 }
 
 
 .card-item {
-    min-width: 300px; /* Ensure cards have a consistent width */
-    flex: 0 0 auto; /* Prevents cards from growing/shrinking with viewport */
+    min-width: 400px;
+    flex: 0 0 auto;
 }
 
 .card-content {
     position: relative;
-    border-radius: 8px;
+    border-radius: 21px;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -738,36 +769,49 @@
 
 .hover-card {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 20px;
+    left: 15px;
     right: 0;
-    background-color: white;
+    background-color: var(--white-color);
     padding: 15px;
-    transform: translateY(70%); /* Starts mostly hidden */
+    width: 400px;
+    border-radius: 21px;
+    transform: translateY(70%);
     transition: transform 0.4s ease-out;
     box-shadow: 0 -4px 6px rgba(0,0,0,0.05);
 }
 
 .card-content:hover .hover-card {
-    transform: translateY(0); /* Slides up on hover */
+    transform: translateY(0);
 }
 
 .hover-card h6 {
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.59px;
+    text-transform: uppercase;
+    color: var(--heading-color);
     margin-bottom: 0.5rem;
 }
 
 .hover-card p {
-    font-size: 0.8rem;
-    color: #6c757d;
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 17px;
+    line-height: 130%;
+    color: var(--heading-color);
     margin-bottom: 0.5rem;
+    width: 290px;
 }
 
 .arrow-icon {
     position: absolute;
-    right: 15px;
-    top: 15px;
-    color: #007bff;
+    right: 25px;
+    top: 145px;
+    color: var(--blue-color);
     font-size: 1.2rem;
 }
