@@ -605,7 +605,6 @@
 
 
 /* our team section */
-
 .our-team-main-small-heading {
     font-family: var(--font-heading-oswald);
     font-weight: 500;
@@ -821,10 +820,42 @@ transform: translateY(0);
 .card {
     border: none;
     border-radius: 15px;
+    background-color: var(--card-color);
+}
+
+.testimonals-main-small-heading{
+    font-family: var(--font-heading-oswald);
+    font-size: 17px;
+    line-height: 17px;
+    color: var(--blue-color);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    text-transform: uppercase;
+}
+
+.testimonals-main-big-heading{
+    font-family: var(--font-heading-oswald);
+    font-size: 63px;
+    line-height: 70px;
+    color: var(--heading-color);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    letter-spacing: -1.26px;
+    text-transform: uppercase;
+    width: 320px;
+}
+
+.testimonals-main-description-left{
+    font-family: var(--font-description-plusjakarta);
+    font-size: 26px;
+    line-height: 38px;
+    color: var(--heading-color);
+    font-weight: 800;
+    font-style: 'ExtraBold';
 }
 
 .text-dark-blue {
-    color: #002c50;
+    color: var(--heading-color);
 }
 
 .custom-divider {
@@ -837,31 +868,80 @@ transform: translateY(0);
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 80%;
+    height: 110%;
     width: 2px;
-    background-color: #e9ecef;
+    background-color: #D7DEDE;
 }
 
 .testimonial-text {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
+    font-size: 25px;
+    line-height: 38px;
+    color: var(--heading-color);
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 800;
+    width: 590px;
 }
 
 .user-avatar {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.custom-prev {
-    background-color: #f1f4f8 !important;
-    border: none !important;
-    color: #002c50 !important;
+.testimonial-text,
+.user-avatar {
+    transition: opacity 0.3s ease;
 }
 
-.custom-next {
-    background-color: #007bff !important;
-    border: none !important;
+.testimonal-card-user-name{
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 21px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: var(--heading-color);
+}
+
+.testimonal-card-user-position{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 19px;
+    line-height: 32px;
+    color: var(--heading-color);
+}
+
+.testimonal-arrow-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--card-color);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: al 0.3s, ease;
+}
+
+.testinonal-arrow-right-rotate{
+    transform: rotate(180deg);
+}
+
+.testimonal-arrow-btn:hover {
+    background-color: var(--blue-color);    
+}
+
+.testimonal-arrow-btn:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.testimonal-arrow-left:hover img {
+    transform: rotate(360deg);
+}
+
+.testimonal-arrow-right:hover img {
+    transform: rotate(180deg);
 }
