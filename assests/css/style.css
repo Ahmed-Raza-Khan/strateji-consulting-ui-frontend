@@ -73,7 +73,10 @@
 
 /* hero section */
 .hero-section {
-    background-color: var(--heading-color);
+    background-image: url(../images/hero-circle-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 700px;
     display: flex;
     align-items: center;
