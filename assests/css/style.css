@@ -1124,7 +1124,6 @@ transform: translateY(0);
     line-height: 21px;
     text-transform: uppercase;
     text-decoration: underline;
-    
     color: var(--blue-color);
 }
 
@@ -1135,4 +1134,199 @@ transform: translateY(0);
 
 .card-title {
     color: #212529;
+}
+
+
+/* footer section */
+.custom-footer {
+    background-color: var(--heading-color);
+    color: #ccc;
+    padding: 40px 0 20px 0;
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.custom-footer::before,
+.custom-footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.custom-footer::before {
+    left: 0;
+    background-image: url(../images/lines-leftside-footer.png);
+    background-repeat: no-repeat;
+}
+
+.custom-footer::after {
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/lines-rightside-footer.png);
+    background-repeat: no-repeat;
+}
+
+.main-heading-footer-text{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 500;
+    font-style: 'SemiBold';
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
+    color: var(--white-color);
+}
+
+.custom-footer li {
+    margin-bottom: 13px;
+}
+
+.custom-footer a {
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'Medium';
+    font-size: 16px;
+    line-height: 26px;
+    color: #E9E9E9;
+    text-decoration: none;    
+    transition: color 0.3s;
+    background-color: #003459;
+}
+
+.custom-footer a:hover {
+    color: #fff;
+}
+
+.footer-address-down{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 15px;
+    line-height: 26px;
+    color: #E9E9E9;
+    width: 235px;
+}
+
+.footer-phone-down{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--white-color);
+}
+
+.footer-mail-down{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'regular';
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--white-color);
+}
+
+.footer-logo-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.logo-text-footer-down{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 14px;
+    line-height: 26px;
+    color: #f8f8f8;
+    width: 315px;
+}
+
+.logo-footer-start-top{
+    width: 220px;
+    height: 90px;
+    border-radius: 8px;
+}
+
+.logo-blurry-circle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: var(--blue-color);
+    opacity: 20%;
+    border-radius: 50%;
+    filter: blur(25px);
+    top: 180%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.copyright-footer-text{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 16px;
+    line-height: 31px;
+    color: var(--white-color);
+}
+
+.footer-text-highlited-copyright{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 500;
+    font-style: 'Medium';
+    font-size: 19px;
+    line-height: 32px;
+    color: var(--background-color);
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: var(--heading-color);
+    border-radius: 50%;
+    border: 1px solid #FFFFFF80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+    transition: filter 0.3s ease;
+}
+
+.icon-circle:hover {
+    width: 40px;
+    height: 40px;
+    background-color: var(--blue-color);
+}
+
+.footer-text-privacy-terms-down{
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 200;
+    font-style: 'Light';
+    font-size: 13px;
+    line-height: 25px;
+    color: #E9E9E9;   
+}
+
+.dashed-line {
+    border: none;
+    border-top: 1px dashed #E9E9E980;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.vertical-divider {
+    border-left: 1px solid #E9E9E9;
+    width: 1.07px;
+    height: 15px;
+    margin: 0 15px;
 }
