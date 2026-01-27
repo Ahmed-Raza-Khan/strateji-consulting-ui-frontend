@@ -532,6 +532,64 @@
     align-items: center;
 }
 
+@media (max-width: 425px) {
+    .main-heading {
+        width: 370px;
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: -1px;
+        margin-left: 20px;
+        padding: 0 15px;
+    }
+
+    .custom-card {
+        margin-bottom: 20px;
+    }
+
+    .icon-bg{
+        border-radius: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-heading {
+        width: 310px;
+        font-size: 34px;
+        line-height: 45px;
+        letter-spacing: -1px;
+        margin-left: 25px;
+        padding: 0 15px;
+    }
+
+    .custom-card {
+        margin-bottom: 20px;
+    }
+
+    .icon-bg{
+        border-radius: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-heading {
+        width: 310px;
+        font-size: 34px;
+        line-height: 45px;
+        letter-spacing: -1px;
+        margin-left: 0px;
+        padding: 0 15px;
+    }
+
+    .custom-card {
+        margin-bottom: 20px;
+    }
+
+    .icon-bg{
+        border-radius: 13px;
+    }
+}
+
+
 /* aboutus section - 2 */
 .image-box {
     position: relative;
