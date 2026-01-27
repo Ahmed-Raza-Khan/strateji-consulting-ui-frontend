@@ -41,11 +41,8 @@
 }
 
 .logo-box {
-    background-color: var(--bright-blue);
-    padding: 10px 30px;
-    color: var(--white-color);
+    color: var(--white-color); 
     height: 80px;
-    margin-left: -12px;
 }
 
 .custom-btn {
@@ -68,6 +65,104 @@
     background-color: var(--blue-color);
     color: var(--white-color);
     border: 3px solid var(--heading-color);
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        background-color: var(--background-color) !important;
+        /* height: 120px; */
+        /* gap: 10px; */
+    }
+    
+    .logo-box img{
+        width: 250px;
+        border: none;
+        height: 80px;
+        transform: translateX(-30px);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(../images/toogler-button-mobile.png);
+        width: 40px;
+        height: 45px;
+        border: none;
+    }
+    
+    .navbar-collapse.show {
+        /* margin-top: 5%; */
+        background-color: var(--white-color);
+        width: 100%;
+    }
+
+    .mobile-nav-info {
+        background-color: var(--heading-color);
+        padding: 1rem;
+    }
+
+    .mobile-nav-info .location-text {
+        color: var(--white-color);
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-collapse.show .navbar-nav .nav-link {
+        color: var(--heading-color); 
+        padding-left: 2rem;
+        display: flex;
+    }
+
+    .navbar-collapse.show .custom-btn {
+        margin: 1rem 0 1rem 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        background-color: var(--background-color) !important;
+        /* height: 120px; */
+        /* gap: 10px; */
+    }
+    
+    .logo-box img{
+        width: 190px;
+        border: none;
+        /* height: 80px; */
+        /* transform: translateX(-30px); */
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(../images/toogler-button-mobile.png);
+        width: 40px;
+        height: 45px;
+        border: none;
+    }
+    
+    .navbar-collapse.show {
+        /* margin-top: 5%; */
+        background-color: var(--white-color);
+        width: 100%;
+    }
+
+    .mobile-nav-info {
+        background-color: var(--heading-color);
+        padding: 1rem;
+    }
+
+    .mobile-nav-info .location-text {
+        color: var(--white-color);
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-collapse.show .navbar-nav .nav-link {
+        color: var(--heading-color);
+        padding-left: 2rem;
+        display: flex;
+    }
+
+    .navbar-collapse.show .custom-btn {
+        margin: 1rem 0 1rem 2rem;
+    }
 }
 
 

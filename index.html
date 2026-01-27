@@ -21,7 +21,7 @@
 
     <body>
         <header>
-            <div class="top-bar">
+            <div class="top-bar d-none d-md-block">
                 <div class="container-fluid">
                     <div class="row align-items-center py-2">
                         <div class="col-md-6">
@@ -35,7 +35,7 @@
                 </div>
             </div>
 
-            <nav class="navbar navbar-expand-lg sticky-top ">
+            <nav class="navbar navbar-expand-lg sticky-top">
                 <div class="container-fluid">
                     <a class="navbar-brand logo-container ms-4 mt-1" href="index.html">
 
@@ -45,10 +45,21 @@
                     </a>
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <img src="assests/images/toogler-button-mobile.png" alt="Toggle navigation"> -->
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
-                    <div class="collapse navbar-collapse justify-content-end ms-5" id="navbarNav">
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <div class="mobile-nav-info d-md-none">
+                            <div class="container-fluid">
+                                <div class="row py-2">
+                                    <div class="col-12"><span class="location-text"><img src="assests/images/location-nav.svg" alt="location" class="me-2">1151 Walker Rd Ste 100 PMB 337 Dover, DE 19904</span></div>
+                                    <div class="col-12"><span class="location-text"><img src="assests/images/phone-nav.png" alt="phone" class="me-2">123-456-78910</span></div>
+                                    <div class="col-12"><span class="location-text"><img src="assests/images/email-nav.svg" alt="" class="me-2">info@thestateji.com</span></div>
+                                </div>
+                            </div>
+                        </div>
+
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">HOME</a>
@@ -71,6 +82,7 @@
                 </div>
             </nav>
         </header>
+
 
 
         <main>
@@ -538,7 +550,7 @@
                     <div class="col-md-2 mt-5 ms-2">
                         <div class="main-heading-footer-text">Menu</div>
                         <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">More About Us</a></li>
                             <li><a href="#">Submit your request</a></li>
