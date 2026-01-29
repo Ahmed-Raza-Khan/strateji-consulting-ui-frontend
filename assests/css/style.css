@@ -1262,7 +1262,7 @@ transform: translateY(0);
 
 
 /* process section */
-    .process-section {
+.process-section {
     background-color: #001f4c;
     color: white;
     padding: 80px 0;
@@ -1422,6 +1422,206 @@ transform: translateY(0);
     margin-left: 70px;
 }
 
+@media (max-width: 425px) {
+    .process-section .row.mt-5 {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        overflow: hidden;
+        /* padding: 40px 15px; */
+    }
+
+    .process-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 10%;
+        background-image: url('../images/working-process-vector-background.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .workin-process-small-heading {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .workin-process-big-heading {
+        width: 340px;
+        font-size: 40px;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        letter-spacing: -1.26px;
+        line-height: 120%;
+        text-align: center;
+        margin-left: auto !important; 
+        margin-right: auto !important;
+    }
+
+    .workin-process-big-color{
+        color: var(--blue-color);
+    }
+
+    .step-container {
+        position: relative;
+        display: flex !important;
+        flex-direction: column;
+        gap: 160px;
+        align-items: center;
+    }
+    
+    .step-container::before {
+        display: none; 
+    }
+
+    .step-item {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        background: transparent;
+        text-align: center;
+        position: relative;
+    }
+
+    .step-item:nth-child(1)::after {
+        /* content: "Discovery & Analysis\A We evaluate existing contracts, services, and infrastructure to identify areas for improvement."; */
+        white-space: pre-line;
+        display: block;
+        margin-top: -30px;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 2px;
+        color: #294F4E;
+    }
+
+    .step-item:nth-child(2)::after {
+        /* content: "Tailored Strategy & Negotiation\A Our experts design a plan that maximizes value, minimizes costs, and ensures scalability."; */
+        white-space: pre-line;
+        display: block;
+        margin-top: -30px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #294F4E;
+    }
+
+    .step-item:nth-child(3)::after {
+        /* content: "Implementation\A We work closely with your internal teams to coordinate the rollout of new agreements and systems."; */
+        white-space: pre-line;
+        display: block;
+        margin-top: -30px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #294F4E;
+    }
+
+    .step-item::after {
+        content: "";
+        display: block !important;
+        width: 2px;
+        height: 50px;
+        background-color: #294F4E;
+        /* margin: 20px 0 0; */
+        font-weight: 400;
+    }
+
+    .step-item::after::first-line {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .step-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90px;
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        opacity: 1;
+        pointer-events: auto;
+        margin-top: 20px !important;
+        margin-bottom: 40px;
+        display: flex;
+    }
+
+    .step-item:nth-child(1) .step-text {
+        display: block;
+    }
+
+    .step-item:nth-child(2) .step-text {
+        display: block;
+    }
+
+    .step-item:nth-child(3) .step-text {
+        display: block;
+    }
+
+    .step-item:nth-child(1)::after,
+    .step-item:nth-child(2)::after,
+    .step-item:nth-child(3)::after {
+        display: none;
+    }
+
+    .step-item:nth-child(1) {
+        --step-index: 1;
+    }
+
+    .step-item:nth-child(2) {
+        --step-index: 2;
+    }
+
+    .step-item:nth-child(3) {
+        --step-index: 3;
+    }
+
+    .step-item {
+        position: relative;
+    }
+
+    .step-text:nth-child(1),
+    .step-text:nth-child(2),
+    .step-text:nth-child(3) {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bottom-text-step-heading, 
+    .bottom-text-step-heading-3,
+    .bottom-text-step-description, 
+    .bottom-text-step-description-2 {
+        width: 100% !important;
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .mobile-button {
+        background-color: var(--blue-color); 
+        border-color: #467bff; 
+        border-radius: 8px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        display: inline-block;
+        width: 100%;
+        max-width: 200px;
+        margin: 20px auto 0;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
 
 /* our team section */
 .our-team-main-small-heading {
@@ -1486,6 +1686,96 @@ transform: translateY(0);
 .team-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 426px) {
+    .team-section {
+        padding: 40px 0px;
+        overflow: hidden;
+    }
+
+    .team-section .row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .team-section .row::-webkit-scrollbar {
+        display: none;
+    }
+
+    .team-section .col-md-4,
+    .team-section .col-lg-3 {
+        flex: 0 0 85%;
+        max-width: 100%;
+        scroll-snap-align: center;
+    }
+
+    .team-card {
+        background: var(--white-color);
+        border-radius: 21px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .team-card:hover {
+        transform: translateY(0px);
+        box-shadow: none;
+    }
+
+    .team-card img {
+        width: 100%;
+        border-radius: 21px;
+        object-fit: cover;
+    }
+
+    .team-card h5 {
+        margin-top: 15px;
+        font-size: 26px;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        letter-spacing: -0.5px;
+        line-height: 32px;color: var(--heading-color);
+    }
+
+    .team-card p {
+        font-size: 19px;
+        font-weight: 400;
+        font-style: 'regular';
+        line-height: 28px;
+        color: var(--heading-color);
+        margin-bottom: 0;
+    }
+
+    .team-section .our-team-main-small-heading {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        line-height: 17px;
+        letter-spacing: 1px;
+    }
+
+    .team-section .our-team-main-big-heading {
+        width: 330px;
+        text-align: center;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -1.26px;
+        margin-bottom: 30px;
+        margin-left: 10%;
+    }
+
+    .big-heading-team-main-side{
+        color: var(--blue-color);
+    }
+
+    /* .team-section .our-team-main-big-heading br{
+        display: none;
+    } */
 }
 
 
