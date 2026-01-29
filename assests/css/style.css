@@ -591,10 +591,13 @@
 
 
 /* aboutus section - 2 */
+.text-box-for-aboutus-222222{
+    margin-left: 3%;
+}
+
 .image-box { 
     position: relative;
-    background-color:
-    transparent;
+    background-color: transparent;
 }
 
 .image-box::before { 
@@ -672,6 +675,14 @@
 }
 
 @media (max-width: 425px) {
+    .image-box{
+        margin-top: 15%;
+    }
+
+    .text-box-for-aboutus-222222{
+        margin-top: -20%;
+    }
+
     .image-box::before { 
         left: 5px;
         width: 224px;
@@ -891,6 +902,82 @@
 
 .stat-item .text-center {
     text-align: center !important;
+}
+
+@media (max-width: 425px) {
+    .aboutus-3-sec{
+        margin-top: -25%;
+        background-color: var(--card-color);
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    .aboutus-sec-3-number{
+        font-size: 55.5px;
+        letter-spacing: -1.11px;
+        line-height: 59.39px;
+        text-transform: uppercase;
+        font-family: var(--font-heading-oswald);
+        text-align: center;
+    }
+
+    .aboutus-sec-3-small-heading{
+        font-size: 16.65px;
+        letter-spacing: -0.33px;
+        line-height: 20.81px;
+    }
+
+    .aboutus-sec-3-small-description{
+        font-size: 12.49px;
+        line-height: 20.81px;
+    }
+
+    .stat-item::after {
+        display: none;
+    }
+
+    .stat-item {
+        border-bottom: 2px solid #D7DEDE;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .stat-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .stat-item .text-center {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .aboutus-3-sec{
+        margin-top: -30%;
+        background-color: var(--card-color);
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    .aboutus-sec-3-number{
+        font-size: 55.5px;
+        letter-spacing: -1.11px;
+        line-height: 59.39px;
+        text-transform: uppercase;
+        font-family: var(--font-heading-oswald);
+        text-align: center;
+    }
+
+    .aboutus-sec-3-small-heading{
+        font-size: 15px;
+        letter-spacing: -0.33px;
+        line-height: 20.81px;
+    }
+
+    .aboutus-sec-3-small-description{
+        font-size: 12.49px;
+        line-height: 20.81px;
+    }
 }
 
 
