@@ -47,4 +47,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     scrollToCard(activeIndex);
+
+    let startX = 0;
+    let endX = 0;
+
+    slider.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    }, { passive: true });
+
+    slider.addEventListener('touchmove', (e) => {
+        endX = e.touches[0].clientX;
+    }, { passive: true });
+
+    slider.addEventListener('touchend', () => {
+        const swipeDistance = startX - endX;
+
+        // Minimum swipe distance to trigger slide
+        if (Math.abs(swipeDistance) < 50) return;
+
+        if (swipeDistance > 0) {
+            // Swipe LEFT → Next card
+            activeIndex++;
+            if (activeIndex >= totalCards) activeIndex = 0;
+        } else {
+            // Swipe RIGHT → Previous card
+            activeIndex--;
+            if (activeIndex < 0) activeIndex = totalCards - 1;
+        }
+
+        scrollToCard(activeIndex);
+    });
 });

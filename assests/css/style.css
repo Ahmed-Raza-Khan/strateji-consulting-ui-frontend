@@ -981,8 +981,288 @@
 }
 
 
+/* our process section */
+.small-headin-our-process {
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--blue-color);
+    margin-bottom: 0.5rem;
+}
+
+.main-heading-our-process {
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 63px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    width: 520px;
+}
+
+.main-heading-process-succ{
+    color: var(--blue-color);
+}
+
+.arrow-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--card-color);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: al 0.3s, ease;
+}
+
+.arrow-right-rotate{
+    transform: rotate(180deg);
+}
+
+.arrow-btn:hover {
+    background-color: var(--blue-color);    
+}
+
+.arrow-btn:hover img {
+filter: brightness(0) invert(1);
+}
+
+.arrow-left:hover img {
+transform: rotate(360deg);
+}
+
+.arrow-right:hover img {
+transform: rotate(180deg);
+}
+
+.slider-container {
+    margin-left: 8%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    touch-action: pan-x;
+}
+
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card-item {
+    min-width: 400px;
+    flex: 0 0 auto;
+}
+
+.card-content {
+    position: relative;
+    border-radius: 21px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hover-card {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    right: 0;
+    background-color: var(--white-color);
+    padding: 15px;
+    width: 350px;
+    border-radius: 21px;
+    transform: translateY(120%);
+    transition: all 0.4s ease;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.05);
+}
+
+.card-content.active .hover-card {
+transform: translateY(0);
+}
+
+/* .card-content:hover .hover-card {
+    transform: translateY(0);
+} */
+
+.hover-card h6 {
+    font-family: var(--font-heading-oswald);
+    font-weight: 600;
+    font-style: 'DemiBold';
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.59px;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+}
+
+.hover-card p {
+    font-family: var(--font-description-plusjakarta);
+    font-weight: 400;
+    font-style: 'Regular';
+    font-size: 17px;
+    line-height: 130%;
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+    width: 290px;
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 25px;
+    top: 145px;
+    color: var(--blue-color);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 425px) {
+    .card-item {
+        min-width: 100%;
+        flex: 0 0 90%;
+    }
+
+    .header-section .col-md-9 {
+        text-align: center;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .small-headin-our-process{
+        text-align: start;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+
+    .main-heading-our-process {
+        margin-left: 10px;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 48px;
+        width: 380px;
+        text-align: start;
+    }
+
+    .header-section .col-md-2 {
+        display: none !important;
+    }
+
+    .slider-container {
+        margin-top: -10%;
+        margin-left: 0%;
+        touch-action: pan-x;
+        /* padding-right: 5%; */
+    }
+
+    .hover-card {
+        width: 90%;
+        left: 5%;
+        padding: 30px;
+    }
+
+    .hover-card h6 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hover-card p {
+        width: auto;
+        font-size: 15px;
+    }
+
+    .arrow-icon {
+        right: 15px;
+        top: 130px;
+    }
+
+    .card-content .hover-card {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 425px) {
+    .card-item {
+        min-width: 100%;
+        flex: 0 0 90%;
+    }
+
+    .header-section .col-md-9 {
+        text-align: center;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .small-headin-our-process{
+        text-align: start;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 10px;
+    }
+
+    .main-heading-our-process {
+        margin-left: 10px;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38px;
+        width: 280px;
+        text-align: start;
+    }
+
+    .header-section .col-md-2 {
+        display: none !important;
+    }
+
+    .slider-container {
+        margin-top: -15%;
+        margin-left: 0%;
+        touch-action: pan-x;
+        /* padding-right: 5%; */
+    }
+
+    .hover-card {
+        width: 90%;
+        height: 160px;
+        left: 5%;
+        padding: 30px;
+    }
+
+    .hover-card h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .hover-card p {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .arrow-icon {
+        right: 15px;
+        top: 130px;
+    }
+
+    .card-content .hover-card {
+        transform: translateY(0);
+    }
+}
+
+
 /* process section */
-.process-section {
+    .process-section {
     background-color: #001f4c;
     color: white;
     padding: 80px 0;
@@ -1206,152 +1486,6 @@
 .team-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.8);
-}
-
-
-/* our process section */
-.small-headin-our-process {
-    font-family: var(--font-heading-oswald);
-    font-weight: 600;
-    font-style: 'DemiBold';
-    font-size: 17px;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: var(--blue-color);
-    margin-bottom: 0.5rem;
-}
-
-.main-heading-our-process {
-    font-family: var(--font-heading-oswald);
-    font-weight: 600;
-    font-style: 'DemiBold';
-    font-size: 63px;
-    line-height: 70px;
-    text-transform: uppercase;
-    color: var(--heading-color);
-    width: 520px;
-}
-
-.main-heading-process-succ{
-    color: var(--blue-color);
-}
-
-.arrow-btn {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: 1px solid var(--card-color);
-    background-color: var(--white-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: al 0.3s, ease;
-}
-
-.arrow-right-rotate{
-    transform: rotate(180deg);
-}
-
-.arrow-btn:hover {
-    background-color: var(--blue-color);    
-}
-
-.arrow-btn:hover img {
-filter: brightness(0) invert(1);
-}
-
-.arrow-left:hover img {
-transform: rotate(360deg);
-}
-
-.arrow-right:hover img {
-transform: rotate(180deg);
-}
-
-.slider-container {
-    margin-left: 8%;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.slider-container::-webkit-scrollbar {
-    display: none;
-}
-
-.card-item {
-    min-width: 400px;
-    flex: 0 0 auto;
-}
-
-.card-content {
-    position: relative;
-    border-radius: 21px;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.card-content img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hover-card {
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-    right: 0;
-    background-color: var(--white-color);
-    padding: 15px;
-    width: 350px;
-    border-radius: 21px;
-    transform: translateY(120%);
-    transition: all 0.4s ease;
-    box-shadow: 0 -4px 6px rgba(0,0,0,0.05);
-}
-
-.card-content.active .hover-card {
-transform: translateY(0);
-}
-
-/* .card-content:hover .hover-card {
-    transform: translateY(0);
-} */
-
-.hover-card h6 {
-    font-family: var(--font-heading-oswald);
-    font-weight: 600;
-    font-style: 'DemiBold';
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -0.59px;
-    text-transform: uppercase;
-    color: var(--heading-color);
-    margin-bottom: 0.5rem;
-}
-
-.hover-card p {
-    font-family: var(--font-description-plusjakarta);
-    font-weight: 400;
-    font-style: 'Regular';
-    font-size: 17px;
-    line-height: 130%;
-    color: var(--heading-color);
-    margin-bottom: 0.5rem;
-    width: 290px;
-}
-
-.arrow-icon {
-    position: absolute;
-    right: 25px;
-    top: 145px;
-    color: var(--blue-color);
-    font-size: 1.2rem;
 }
 
 
