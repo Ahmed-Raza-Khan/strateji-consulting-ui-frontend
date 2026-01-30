@@ -813,7 +813,7 @@
     }
     
     .about-text-large-2{
-        width: 330px;
+        width: 290px;
         font-style: 'DemiBold';
         line-height: 120%;
         letter-spacing: -1.26px;
@@ -1497,7 +1497,7 @@ transform: translateY(0);
         font-size: 16px;
         line-height: 1.5;
         width: 2px;
-        color: #294F4E;
+        color: #ffffff;
     }
 
     .step-item:nth-child(2)::after {
@@ -2550,13 +2550,6 @@ transform: translateY(0);
     }
 }
 
-/* @media (max-width: 991.98px) {
-    .success-section {
-        height: auto;
-        text-align: center;
-    }
-} */
-
 
 /* recent posts section */
 .post-heading-small{
@@ -2639,6 +2632,143 @@ transform: translateY(0);
 
 .card-title {
     color: #212529;
+}
+
+@media (max-width: 425px) {
+    .post-heading-small{
+        font-size: 17px;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        line-height: 17px;
+    }
+
+    .post-heading-big {
+        margin-left: 40px;
+        font-size: 40px;
+        line-height: 120%;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        line-height: -1.26px;
+        width: 330px;
+    }
+
+    .post-heading-big-color-lights{
+        color: #0075FF;
+    }
+
+    .row.g-4 {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+
+    .row.g-4::-webkit-scrollbar {
+        display: none;
+    }
+
+    .row.g-4 > .col-md-4 {
+        flex: 0 0 85%;
+        max-width: 100%;
+        scroll-snap-align: center;
+    }
+
+    .card-date-business-step {
+        font-size: 14px;
+        font-weight: 400;
+        font-style: 'Regular';
+        line-height: 22px;
+    }
+
+    .card-title-step-card-down{
+        width: 330px;
+        font-size: 23px;
+        line-height: 28px;
+        letter-spacing: -0.46px;
+        font-style: 'DemiBold';
+    }
+
+    .card-title-step-card-down-right {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.46px;
+    }
+
+    .btn-link-step{
+        font-weight: 600;
+        font-size: 14px;
+        font-style: 'DemiBold';
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 375px) {
+    .post-heading-small{
+        font-size: 17px;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        line-height: 17px;
+    }
+
+    .post-heading-big {
+        margin-left: 15px;
+        font-size: 36px;
+        line-height: 120%;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        line-height: -1.26px;
+        width: 330px;
+    }
+}
+
+@media (max-width: 320px) {
+    .post-heading-small{
+        font-size: 15px;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        line-height: 17px;
+    }
+
+    .post-heading-big {
+        margin-left: 1px;
+        font-size: 32px;
+        line-height: 120%;
+        font-weight: 600;
+        font-style: 'DemiBold';
+        line-height: -1.26px;
+        width: 300px;
+    }
+
+    .card-date-business-step {
+        font-size: 12px;
+        font-weight: 400;
+        font-style: 'Regular';
+        line-height: 22px;
+    }
+
+    .card-title-step-card-down{
+        width: 260px;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.46px;
+        font-style: 'DemiBold';
+    }
+
+    .card-title-step-card-down-right {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.46px;
+    }
+
+    .btn-link-step{
+        font-weight: 600;
+        font-size: 14px;
+        font-style: 'DemiBold';
+        line-height: 17px;
+    }
 }
 
 
