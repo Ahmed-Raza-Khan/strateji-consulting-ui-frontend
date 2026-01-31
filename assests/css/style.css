@@ -3271,21 +3271,6 @@ transform: translateY(0);
         opacity: 1;
         transform: translateY(64%);
     }
-
-    /* .custom-footer .row > div {
-        margin-left: 0 !important;
-    }
-
-    .custom-footer > .container > .row:first-of-type {
-        display: flex;
-        flex-wrap: wrap;
-    } */
-
-    /* .custom-footer > .container > .row:first-of-type > div:nth-child(1) {
-        width: 100%;
-        order: 1;
-    } */
-
     .custom-footer > .container > .row:first-of-type > div:nth-child(3) {
         width: 100%;
         order: 2;
